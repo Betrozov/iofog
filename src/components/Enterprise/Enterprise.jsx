@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
-
 import './Enterprise.scss';
 
 class Enterprise extends Component {
   render() {
     return (
-      <section className="row enterprise">
+      <section className="row">
         <section className="col-md-12">
           <div className="entry__header">
             <h6>Enterprise</h6>
@@ -15,7 +14,9 @@ class Enterprise extends Component {
             <Link className="button" to="/">Learn about Edgeworx</Link>
           </div>
 
-          <img src="/images/img-gallery-01.png" className="img-enterprise" alt="" />
+          <div className="img-holder">
+            <img src="/images/img-gallery-01.png" alt="" />
+          </div>
         </section>
       </section>
     );
