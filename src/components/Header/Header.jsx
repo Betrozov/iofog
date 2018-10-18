@@ -4,6 +4,23 @@ import config from "../../../data/SiteConfig";
 
 import "./Header.scss";
 
+function toggle() {
+  const parent = document.getElementById('nav');
+
+  function showMenu() {
+    parent.classList.add('opened');
+  }
+  function hideMenu() {
+    parent.classList.remove('opened');
+  }
+
+  if (!parent.classList.contains('opened')) {
+    showMenu()
+  } else {
+    hideMenu()
+  }
+}
+
 const Header = ({ menuLinks }) => (
   <header className="header">
     <div className="container">
@@ -14,14 +31,26 @@ const Header = ({ menuLinks }) => (
           </Link>
         </div>
 
-        <nav className="col-xl-6 col-lg-7 col-4 main-nav">
-          <button className="menu-opener" />
-          <div className="holder">
+        <nav className="col-xl-6 col-lg-7 col-4 main-nav" id="nav">
+          <button className="menu-opener" onClick={()=> toggle()} />
+          <div className="d-ld-block d-none">
             {menuLinks.map(link => (
               <Link activeClassName="active" to={link.path} key={link.title}>{link.title}</Link>
             ))}
             <Link activeClassName="active" to="/community">Community</Link>
             <Link activeClassName="active" to="/enterprise">Enterprise</Link>
+          </div>
+
+          <div className="mobile-menu">
+            <div className="container">
+              <div className="row">
+                {menuLinks.map(link => (
+                  <Link activeClassName="active" to={link.path} key={link.title}>{link.title}</Link>
+                ))}
+                <Link activeClassName="active" to="/community">Community</Link>
+                <Link activeClassName="active" to="/enterprise">Enterprise</Link>
+              </div>
+            </div>
           </div>
         </nav>
 

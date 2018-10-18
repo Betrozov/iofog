@@ -9,10 +9,8 @@ class CommunityPage extends Component {
   render() {
     return (
       <Layout>
-        <div className="container entry">
-          <Helmet title={`Community | ${config.siteTitle}`} />
-          <Community />
-        </div>
+        <Helmet title={`Community | ${config.siteTitle}`} />
+        <Community />
       </Layout>
     );
   }

@@ -8,10 +8,8 @@ class EnterprisePage extends Component {
   render() {
     return (
       <Layout>
-        <div className="container entry">
-          <Helmet title={`Enterprise | ${config.siteTitle}`} />
-          <Enterprise />
-        </div>
+        <Helmet title={`Enterprise | ${config.siteTitle}`} />
+        <Enterprise />
       </Layout>
     );
   }

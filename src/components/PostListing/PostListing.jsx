@@ -11,7 +11,7 @@ import "./PostListing.scss";
 class PostListing extends Component {
   getCategoriesMenu() {
     const postList = [];
-    let versions = [];
+    const versions = [];
     const { activeLink, postEdges } = this.props;
 
     postEdges.forEach(postEdge => {
@@ -31,7 +31,6 @@ class PostListing extends Component {
       };
 
       if (versions) {
-        console.log(path, activeLink);
         list.isActive = path === activeLink;
       }
 

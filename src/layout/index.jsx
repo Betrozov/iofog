@@ -23,7 +23,7 @@ export default class MainLayout extends Component {
 
     return (
       <div className={wrapperClasses}>
-        <Header location={this.props.location} />
+        <Header location={this.props.location} someData='22' />
 
         <Helmet>
           <meta name="description" content={config.siteDescription} />
