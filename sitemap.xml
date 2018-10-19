@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://betrozov.github.io/ioFog/ioFog/documentations/installing-io-fog</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://betrozov.github.io/ioFog/ioFog/releases/release-0-00</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://betrozov.github.io/ioFog/ioFog/documentations/0.0/before-you-start</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://betrozov.github.io/ioFog/ioFog/documentations/0.0/glossary-article</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://betrozov.github.io/ioFog/ioFog/documentations/0.0/installing-io-fog</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://betrozov.github.io/ioFog/ioFog/documentations/0.0/inspector-article</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://betrozov.github.io/ioFog/ioFog/documentations/0.0/configuration-article</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://betrozov.github.io/ioFog/ioFog/documentations/0.0/models-article</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://betrozov.github.io/ioFog/ioFog/documentations/0.0/overview</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://betrozov.github.io/ioFog/ioFog/documentations/0.0/quick-start</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://betrozov.github.io/ioFog/ioFog/documentations/0.0/tutorial-article</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://betrozov.github.io/ioFog/ioFog/documentations/0.0/testing-article</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://betrozov.github.io/ioFog/ioFog/documentations/0.1/models-article</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://betrozov.github.io/ioFog/ioFog/documentations/0.1/quick-start</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://betrozov.github.io/ioFog/ioFog/releases/release-0-02</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://betrozov.github.io/ioFog/ioFog/releases/release-0-01</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://betrozov.github.io/ioFog/ioFog/releases/release-0-03</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://betrozov.github.io/ioFog/ioFog/releases/release-0-00</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://betrozov.github.io/ioFog/ioFog/community/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://betrozov.github.io/ioFog/ioFog/documentation/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://betrozov.github.io/ioFog/ioFog/enterprise/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
