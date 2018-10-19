@@ -24,7 +24,7 @@ export default class PostTemplate extends React.Component {
     const postEdges = data.allMarkdownRemark.edges;
 
     return (
-      <Layout>
+      <Layout location={type}>
         <Helmet>
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
@@ -33,7 +33,7 @@ export default class PostTemplate extends React.Component {
 
         <div className="container-fluid">
           <div className="row post">
-            <div className="menu-list col-12 d-none d-lg-block col-lg-3">
+            <div className="menu-list col-12 col-lg-3">
               <div className="row">
                 <PostListing postEdges={postEdges} activeLink={activeLink} />
               </div>

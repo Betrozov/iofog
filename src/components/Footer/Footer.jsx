@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
-import { FaGithubAlt, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaTwitter } from 'react-icons/fa';
 import './Footer.scss';
 import config from '../../../data/SiteConfig';
 
@@ -40,7 +40,7 @@ class Footer extends Component {
                 </div>
                 <div className="col-md-2 footer__follow">
                   <h4>Follow us</h4>
-                  <a href={config.userLinks.github} target="_blank" rel="noopener noreferrer"><FaGithubAlt /></a>
+                  <a href={config.userLinks.github} target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                   <a href={config.userLinks.twitter} target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
                 </div>
                 <div className="col-12 d-md-none">

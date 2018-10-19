@@ -7,7 +7,7 @@ import Enterprise from '../components/Enterprise/Enterprise';
 class EnterprisePage extends Component {
   render() {
     return (
-      <Layout>
+      <Layout location="enterprise">
         <Helmet title={`Enterprise | ${config.siteTitle}`} />
         <Enterprise />
       </Layout>
