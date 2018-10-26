@@ -31,8 +31,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "documentations",
-        path: `${__dirname}/content/documentations`
+        name: "documentation",
+        path: `${__dirname}/content/documentation`
       }
     },
     {
@@ -53,6 +53,9 @@ module.exports = {
             }
           },
           {
+            resolve: `gatsby-remark-relative-images`,
+          },
+          {
             resolve: "gatsby-remark-responsive-iframe"
           },
           {
@@ -62,8 +65,28 @@ module.exports = {
               showLineNumbers: true
             }
           },
+          {
+            resolve: 'gatsby-remark-emojis',
+            options: {
+              // Deactivate the plugin globally (default: true)
+              active : true,
+              // Add a custom css class
+              class  : 'emoji-icon',
+              // Select the size (available size: 16, 24, 32, 64)
+              size   : 64,
+              // Add custom styles
+              styles : {
+                display      : 'inline',
+                margin       : '0',
+                'margin-top' : '1px',
+                position     : 'relative',
+                top          : '5px',
+                width        : '25px'
+              }
+            }
+          },
           "gatsby-remark-copy-linked-files",
-          "gatsby-remark-autolink-headers"
+          "gatsby-remark-autolink-headers",
         ]
       }
     },
@@ -83,6 +106,7 @@ module.exports = {
     "gatsby-plugin-catch-links",
     "gatsby-plugin-twitter",
     "gatsby-plugin-sitemap",
+    "gatsby-transformer-json",
     {
       resolve: "gatsby-plugin-manifest",
       options: {

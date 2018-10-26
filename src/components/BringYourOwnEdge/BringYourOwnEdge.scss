@@ -1,5 +1,5 @@
 .edge {
-  padding: 129px 0 0;
+  padding-top: 129px;
   height: 446px;
   position: relative;
 
@@ -11,7 +11,7 @@
     left: 0;
     width: 174px;
     height: 174px;
-    background: url("/images/bg/bg-edge-left.svg") no-repeat;
+    background: url("../../../static/images/bg/bg-edge-left.svg") no-repeat;
     z-index: -1;
   }
 
@@ -23,7 +23,7 @@
     bottom: 0;
     width: 358px;
     height: 542px;
-    background: url("/images/bg/bg-edge-right.svg") no-repeat;
+    background: url("../../../static/images/bg/bg-edge-right.svg") no-repeat;
     z-index: -1;
   }
 }
@@ -33,13 +33,11 @@
 
   h1 {
     color: #4668fd;
-    line-height: 52px;
     letter-spacing: -0.2px;
   }
 
   p {
     font-size: 19px;
-    line-height: 30px;
     margin: 0;
     max-width: 450px;
   }
@@ -53,9 +51,8 @@
 
     a {
       color: #4668fd;
-      font-family: "Averta Std - Bold", sans-serif;
+      font-weight: bold;
       font-size: 15px;
-      line-height: 24px;
 
       span {
         position: relative;
@@ -99,20 +96,20 @@
 /* resolution less than 992px */
 @media (max-width: 991px) {
   .edge {
-    padding: 62px 0 0;
+    padding-top: 62px;
     height: 315px;
 
     &:after {
       width: 129px;
       height: 110px;
-      background: url("/images/bg/bg-edge-left-tablet.svg") no-repeat;
+      background: url("../../../static/images/bg/bg-edge-left-tablet.svg") no-repeat;
     }
 
     &:before {
       width: 123px;
       height: 338px;
       bottom: -22px;
-      background-image: url("/images/bg/bg-edge-right-tablet.svg");
+      background-image: url("../../../static/images/bg/bg-edge-right-tablet.svg");
     }
   }
 
@@ -120,18 +117,14 @@
     margin-top: 14px;
 
     h1 {
-      font-family: "Averta Std - Bold", sans-serif;
+      font-weight: bold;
       font-size: 23px;
-      font-weight: normal;
-      line-height: 28px;
       letter-spacing: 0.2px;
     }
 
     p {
       color: #002e43;
-      font-family: "Averta Std - Regular", sans-serif;
       font-size: 15px;
-      line-height: 24px;
     }
   }
 
@@ -139,9 +132,8 @@
     &__container {
       a {
         color: #4668fd;
-        font-family: "Averta Std - Bold", sans-serif;
+        font-weight: bold;
         font-size: 15px;
-        line-height: 24px;
 
         span {
           position: relative;
@@ -187,7 +179,7 @@
       width: 60px;
       height: 258px;
       bottom: 120px;
-      background-image: url("/images/bg/bg-edge-right-mobile.svg");
+      background-image: url("../../../static/images/bg/bg-edge-right-mobile.svg");
     }
   }
   .promo {

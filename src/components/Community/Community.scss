@@ -59,8 +59,8 @@
         background: #fff no-repeat 22px 50%;
         padding: 10px 50px 10px 15px;
         font-size: 15px;
+        font-weight: bold;
         position: relative;
-        font-family: "Averta - Semibold", sans-serif;
         transition: background-color 300ms linear;
 
         &:after {
@@ -72,7 +72,7 @@
           right: 22px;
           top: 50%;
           margin-top: -6px;
-          background: url("/images/icos/ico-arrow-r.svg") no-repeat;
+          background: url("../../../static/images/icos/ico-arrow-r.svg") no-repeat;
         }
 
         &:hover {
@@ -87,13 +87,13 @@
           padding-left: 56px;
 
           &.forum {
-            background-image: url("/images/icos/ico-forum.svg");
+            background-image: url("../../../static/images/icos/ico-forum.svg");
           }
           &.blog {
-            background-image: url("/images/icos/ico-blog.svg");
+            background-image: url("../../../static/images/icos/ico-blog.svg");
           }
           &.support {
-            background-image: url("/images/icos/ico-support.svg");
+            background-image: url("../../../static/images/icos/ico-support.svg");
           }
         }
       }
@@ -102,7 +102,6 @@
     &.events-list {
       li {
         a {
-          line-height: 1;
           padding-left: 0;
           width: 100%;
           max-width: 480px;
@@ -115,19 +114,18 @@
             flex-flow: column wrap;
             color: #4668fd;
             font-size: 23px;
-            font-family: "Averta Std - Bold", sans-serif;
+            font-weight: bold;
 
             span {
               display: block;
               font-size: 12px;
-              font-family: "Averta - Semibold", sans-serif;
+              font-weight: bold;
             }
           }
 
           .wrap {
             color: #57687d;
             font-size: 12px;
-            font-family: "Averta Std - Regular", sans-serif;
             width: calc(100% - 70px);
 
             span {
@@ -135,8 +133,7 @@
               color: #002e43;
               margin-bottom: 4px;
               font-size: 15px;
-              line-height: 24px;
-              font-family: "Averta - Semibold", sans-serif;
+              font-weight: bold;
             }
           }
         }
