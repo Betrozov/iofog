@@ -15,6 +15,11 @@ function toggleMenu() {
   };
   const hideMenu = () => {
     parent.classList.remove('menu-opened');
+    Array
+      .from(parent.getElementsByClassName("sub-menu")) // because HTMLCollection doesn't have forEach
+      .forEach((item) => {
+        item.classList.remove('d-none');
+      });
     document.removeEventListener('click', checkMenu);
   };
 
@@ -44,17 +49,23 @@ function checkMenu(e) {
   toggleMenu().hide();
 }
 
-function activeItem(e) {
+function menuTravel(e) {
   const menuOpened = document.getElementsByClassName('menu-opened');
+  const parent = document.getElementById('nav');
 
   if (e.target.classList.contains('sub-menu__links') && menuOpened.length > 0) {
     e.preventDefault();
 
+    Array
+      .from(parent.getElementsByClassName("sub-menu")) // because HTMLCollection doesn't have forEach
+      .forEach((item) => {
+        item.classList.remove('d-none');
+      });
     e.target.nextElementSibling.classList.add('active');
   }
 
   if (e.target.classList.contains('back')) {
-    e.target.parentElement.classList.remove('active');
+    e.target.parentElement.classList.add('d-none');
   }
 }
 
@@ -75,7 +86,7 @@ const Header = ({ menuLinks, activeLink }) => (
         <nav className="col-xl-6 col-lg-7 col-4 main-nav" id="nav">
           <button className="menu-opener" onClick={toggleMenu} />
           <div className="holder">
-            <ul className="main-menu" onClickCapture={activeItem}>
+            <ul className="main-menu" onClickCapture={menuTravel}>
               {menuLinks.map(topLink => (
                 <li key={topLink.title}>
                   <Link className={isActiveLink(activeLink, topLink) ? 'active sub-menu__links' : 'sub-menu__links'} to={topLink.path}>{topLink.title}</Link>
@@ -173,8 +184,6 @@ export default props => (
       const releases = getCategoriesMenu(data.releases, activeLink);
 
       const menuLinks = [documentation, releases];
-
-      console.log(menuLinks);
 
       return <Header menuLinks={menuLinks} activeLink={activeLink} {...props} />;
     }}
